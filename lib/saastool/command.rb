@@ -6,13 +6,12 @@ module Saas
   class Command < CLAide::Command
     require "saastool/command/init"
     require "saastool/command/update"
-    require "saastool/command/mix"
     require "saastool/command/build"
     require "saastool/command/upload"
 
     self.abstract_command = true
     self.command = "saas"
-    self.version = SaasTool::VERSION
+    self.version = Saastool::VERSION
     self.description = "Saas project managment tool"
 
     def self.run(argv)
