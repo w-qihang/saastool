@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require "saastool"
+
+Saas::Command.run(ARGV)
